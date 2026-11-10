@@ -1,6 +1,6 @@
 # copilot-evals
 
-This repo collects real runs of [runbook-copilot](https://github.com/cianlabs/runbook-copilot) so a person can later read them and label what went wrong.
+This repo collects real runs of [runbook-copilot](https://github.com/itskeeeyin/runbook-copilot) so a person can later read them and label what went wrong.
 
 It asks a fixed list of questions and writes down what the agent did. You can also save a trace of each step. That is explained in Tracing in simple words. Plain checks can score a run file after that. One of them flags a run that used every step and never gave a final answer. `judge.py` asks a model about the four failures those checks cannot see. It skips runs the checks already flagged. [golden.jsonl](golden.jsonl) is the answer key for those questions, and `golden_check.py` scores a run file against it. The names for the labels live in [taxonomy.md](taxonomy.md). The counts there are filled in by hand. Per-run notes are in [labels.md](labels.md).
 

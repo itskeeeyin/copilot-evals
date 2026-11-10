@@ -49,11 +49,11 @@ from pathlib import Path
 # makes this import pick up the local file.
 import trace
 
-# This commit is main of cianlabs/runbook-copilot when this harness was written
+# This commit is main of itskeeeyin/runbook-copilot when this harness was written
 # (the week-4 UI and stop-reason work). A fresh clone checks out this commit
 # so a later upstream change does not silently change the collected runs.
 PINNED_COMMIT = "f4f6cf6216fddc212b187a76e04fc9a51c7b7100"
-REPO_URL = "https://github.com/cianlabs/runbook-copilot.git"
+REPO_URL = "https://github.com/itskeeeyin/runbook-copilot.git"
 
 HERE = Path(__file__).resolve().parent
 QUESTIONS_FILE = HERE / "questions.txt"
